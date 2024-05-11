@@ -10,8 +10,8 @@ const App = () => {
   const [search, setSearch] = useState("");
 
   useEffect(() => {
-    getMovies("batman");
-  }, []);
+    getMovies(search);
+  }, [search]);
 
   const getMovies = async (title) => {
     const response = await fetch(`${API_URL}&s=${title}`);
