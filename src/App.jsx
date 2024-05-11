@@ -4,7 +4,7 @@ import Card from "./components/Card";
 import "./App.css";
 import PropTypes from "prop-types";
 
-const API_URL = "http://www.omdbapi.com/?apikey=1e9af78";
+const API_URL = "https://www.omdbapi.com/?apikey=1e9af78";
 const App = () => {
   const [movies, setMovies] = useState([]);
   const [search, setSearch] = useState("");
