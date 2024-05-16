@@ -7,7 +7,7 @@ import PropTypes from "prop-types";
 const API_URL = "https://www.omdbapi.com/?apikey=1e9af78";
 const App = () => {
   const [movies, setMovies] = useState([]);
-  const [search, setSearch] = useState("");
+  const [search, setSearch] = useState("Superman");
 
   useEffect(() => {
     getMovies(search);
@@ -35,7 +35,9 @@ const App = () => {
 
         <FaSearch onClick={() => {
           getMovies(search)
-        }} />
+        }}
+        className="img"
+        />
       </div>
 
       {movies?.length > 0 ? (
